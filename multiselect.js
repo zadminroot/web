@@ -33,7 +33,7 @@
 
 'use strict'
 
-angular.module( 'isteven-multi-select', ['ng'] ).directive( 'istevenMultiSelect' , [ '$sce', '$timeout', '$templateCache', function ( $sce, $timeout, $templateCache ) {
+angular.module( 'root-multi-select', ['ng'] ).directive( 'rootMultiSelect' , [ '$sce', '$timeout', '$templateCache', function ( $sce, $timeout, $templateCache ) {
     return {
         restrict: 
             'AE',
@@ -68,7 +68,7 @@ angular.module( 'isteven-multi-select', ['ng'] ).directive( 'istevenMultiSelect'
          */
                                                          
          templateUrl: 
-            'isteven-multi-select.htm',                            
+            'root-multi-select.htm',                            
 
         link: function ( $scope, element, attrs ) {                       
 
@@ -1154,5 +1154,5 @@ angular.module( 'isteven-multi-select', ['ng'] ).directive( 'istevenMultiSelect'
             '</div>'+
         '</div>'+
     '</span>';
-	$templateCache.put( 'isteven-multi-select.htm' , template );
+	$templateCache.put( 'root-multi-select.htm' , template );
 }]); 
